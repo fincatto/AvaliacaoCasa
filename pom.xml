@@ -6,6 +6,10 @@
 	<version>1.0-SNAPSHOT</version>
 	<name>avaliacao-casa</name>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
 	<build>
 
 		<plugins>
@@ -20,7 +24,6 @@
 					<findbugsXmlOutputDirectory>${project.build.directory}/findbugs</findbugsXmlOutputDirectory>
 				</configuration>
 				<executions>
-					<!-- Ensures that FindBugs inspects source code when project is compiled. -->
 					<execution>
 						<id>analyze-compile</id>
 						<phase>compile</phase>
